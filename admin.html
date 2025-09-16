@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة الإدارة</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Admin Panel</h1>
+<input type="password" id="admin-pass" placeholder="كلمة المرور">
+<button onclick="loginAdmin()">دخول</button>
+<section id="admin-dashboard" style="display:none;">
+<h2>إدارة المنتجات</h2>
+<textarea id="products-json" rows="20" cols="80"></textarea>
+<button onclick="saveProducts()">حفظ التغييرات</button>
+</section>
+<script src="js/admin.js"></script>
+</body>
+</html>
